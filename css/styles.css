@@ -1,0 +1,230 @@
+@import url(/css/normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+
+/* Default */
+/* fonts */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  padding: 1.5rem 1rem;
+  margin-bottom: 3.75rem;
+}
+
+.header-logo {
+  width: 6.5rem;
+}
+
+.btn {
+  display: inline-block;
+}
+
+nav a {
+  font-size: 0.625rem;
+  border: 1px solid;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.header-text h1 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+.header-content {
+  padding: 0 2.25rem;
+}
+
+.header-text p {
+  margin-top: 1.5rem;
+  line-height: 1.44;
+}
+
+.header-text a {
+  padding: 0.75rem 3.75rem;
+  border: 1px solid;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.header-img {
+  margin-top: 3.5rem;
+  padding-bottom: 2.25rem;
+}
+
+header {
+  background: url(/images/bg-hero-mobile.svg);
+}
+
+/* CARDS */
+
+#cards {
+  margin: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.25rem;
+  height: 29.5rem;
+}
+
+.card-img {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  height: 50%;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* CTA */
+.cta {
+  border: 1px solid;
+
+  padding: 2.5rem 1rem;
+  margin: 0.625rem;
+  margin-top: 7.5rem;
+  border-radius: 1rem;
+}
+.cta h2 {
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.cta a {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: white;
+  background: pink;
+  padding: 0.875rem 3.25rem;
+  border-radius: 2rem;
+  margin-top: 0.75rem;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: -4.875rem;
+  padding: 1rem;
+  background: black;
+  text-align: left;
+  color: white;
+}
+
+footer a {
+  color: white;
+  font-size: 1.125rem;
+  margin-bottom: 1.4rem;
+}
+
+.footer-logo {
+  margin-top: 7.75rem;
+  width: 10.5rem;
+}
+
+.footer-content {
+  padding-top: 0rem;
+}
+
+.contact-content {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.contact-content div {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.contact-content img {
+  width: 1.125rem;
+  height: auto;
+}
+.contact-content p {
+  margin: 0;
+  color: white;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.485;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.social-icons a {
+  color: white;
+  display: inline-block;
+  margin: 0.175rem;
+  border: 1px solid;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
