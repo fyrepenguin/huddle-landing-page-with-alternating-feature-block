@@ -28,7 +28,9 @@ h3 {
   font-weight: 600;
   color: var(--darkCyan);
 }
-
+p {
+  color: var(--grayishBlue);
+}
 a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
@@ -39,6 +41,7 @@ img {
   width: 100%;
   display: inline-block;
 }
+
 .shadow {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
@@ -212,6 +215,12 @@ footer a {
   flex-direction: column;
   margin-top: 3.5rem;
 }
+
+.links div {
+  display: flex;
+  flex-direction: column;
+}
+
 .social-icons {
   text-align: center;
   margin-top: 1.8rem;
@@ -243,13 +252,55 @@ footer a {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-.footer-logo img {
-  fill: red;
-}
 
 @media screen and (min-width: 520px) {
-  header {
+  body {
     padding: 2.5rem;
+  }
+  /* HEADER */
+  header {
+    margin: -2.5rem;
+    padding: 2.5rem;
+  }
+  .header-logo {
+    width: 10rem;
+  }
+  nav a.btn {
+    font-size: 0.875rem;
+    padding: 0.75rem 4.25rem;
+    border-radius: 2rem;
+  }
+  /* CARDS */
+  .card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .card p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  /* CTA  */
+  .cta {
+    margin: 0.625rem auto;
+    padding-top: 3.5rem;
+    max-width: 50rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta a {
+    font-size: 1.25rem;
+    padding: 1.5rem 6.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  footer {
+    margin: -6.5rem -2.5rem;
+    padding: 5rem;
   }
 }
 
@@ -267,14 +318,8 @@ footer a {
   }
 
   nav {
-    margin-bottom: 0;
-    padding: 3.5rem 5em;
-  }
-
-  nav a.btn {
-    font-size: 0.875rem;
-    padding: 0.75rem 4.25rem;
-    border-radius: 2rem;
+    margin-bottom: -1rem;
+    padding: 4.5rem 5em;
   }
 
   .header-content {
@@ -323,24 +368,15 @@ footer a {
   .card {
     flex-direction: row-reverse;
     align-items: center;
-  }
-
-  .card h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   .card p {
-    font-size: 1.125rem;
     margin: 0;
-    margin-bottom: 1.5rem;
   }
 
   .card-img {
-    /* margin-top: 2.5rem; */
-    /* padding: 1rem; */
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
     padding-top: 1rem;
   }
   .card-text {
@@ -350,23 +386,62 @@ footer a {
   .card:nth-child(2) {
     flex-direction: row;
   }
-
-  /*=============== CTA ============== */
-
-  .cta {
-    margin: 0.625rem auto;
-    max-width: 50rem;
-    padding-top: 3.5rem;
+  .card:nth-child(2) .card-img {
+    padding-left: 4rem;
+  }
+  .card:nth-child(2) .card-text {
+    padding: 0 5rem 0 10rem;
   }
 
-  .cta h2 {
-    font-size: 2rem;
+  /* =============== FOOTER =============== */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7rem;
+    padding: 5rem;
+    padding-left: 7.5rem;
+  }
+  footer a {
+    margin-right: 1rem;
   }
 
-  .cta a {
-    font-size: 1.25rem;
-    padding: 1.5rem 6.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+  .footer-logo {
+    margin-top: 7rem;
+    width: 15.5rem;
+  }
+
+  .footer-content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 30% 34% 30%;
+    margin-top: 2.5rem;
+  }
+
+  .contact-content {
+    padding-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .links div {
+    padding-left: 5rem;
+  }
+
+  .social-icons {
+    margin-top: 0;
+    padding-right: 1.75rem;
+  }
+
+  .copyright {
+    align-self: end;
+    font-size: 0.75rem;
+    margin-top: 0;
   }
 }
